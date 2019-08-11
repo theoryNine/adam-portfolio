@@ -6,7 +6,7 @@ const
   // source and build folders
   dir = {
     src         : '',
-    build       : '../wordpress/wp-content/themes/portfolio'
+    build       : '../adamlamb.org/wp-content/themes/portfolio'
   },
 
   // Gulp and plugins
