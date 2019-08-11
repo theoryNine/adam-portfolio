@@ -13,11 +13,9 @@
  */
 
 ?>
-<div class="container">
-   <div class="footer section text-center">
-      <p><em>This site theme was created by and is copyright the CO of this sim. All images on this site are property of their creators and are used in completely non-profit context.</em></p>
-   </div>
-</div>
+<footer>
+   <p class="text-center"><em>This site theme is copyright Adam Lamb © 2019</em></p>
+</footer>
 
 <?php wp_footer(); ?>
 

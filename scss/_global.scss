@@ -1,0 +1,29 @@
+$primary-font: 'Catamaran', sans-serif;
+$secondary-font: 'Pacifico', cursive;
+
+$link-color: $dark-purple;
+$active-link: #c05746;
+
+html {
+    font-size: 16px;
+    font-family: $primary-font;
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+        transition: .5s ease all;
+
+        &:hover {
+            color: $active-link;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}

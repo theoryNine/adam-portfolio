@@ -1,0 +1,21 @@
+nav {
+    width: 75%;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.5em;
+        padding-left: 0;
+
+        li {
+            text-align: right;
+            width: 140px;
+
+            a[aria-current="page"] {
+                color: $active-link;
+            }
+        }
+    }
+}

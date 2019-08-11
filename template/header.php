@@ -9,14 +9,16 @@
 <?php wp_enqueue_style( 'style', get_stylesheet_uri() ); 
 wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), true ); ?>
 
-<div class="container">
-<div class="header row">
-   <div class="logo">
-      <a href="/"><img src="/wp-content/themes/diligent/images/shipnamewhite.jpg" /></a>
-   </div>
-   <div class="nav">
-      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-   </div>
-</div>
-</div>
 </head>
+
+<header>
+   <div class="header-content container">
+      <div class="logo">
+         <a href="/">Adam Lamb</a>
+         <p>User Experience Research & Strategy</p>
+      </div>
+      <nav>
+         <?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
+      </nav>
+   </div>
+</header>
