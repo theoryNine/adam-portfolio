@@ -7,7 +7,9 @@
 
 <?php wp_head(); ?>
 <?php wp_enqueue_style( 'style', get_stylesheet_uri() ); 
-wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), true ); ?>
+wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), true ); 
+$site_description = get_bloginfo( 'description', 'display' ); ?>
+
 
 </head>
 
@@ -15,7 +17,7 @@ wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/js/scripts.js'
    <div class="header-content container">
       <div class="logo">
          <a href="/">Adam Lamb</a>
-         <p><?php bloginfo( ‘description’ ); ?></p>
+         <p><?php echo $site_description; ?></p>
       </div>
       <nav>
          <?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
