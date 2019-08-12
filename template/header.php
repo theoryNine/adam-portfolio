@@ -15,7 +15,7 @@ wp_enqueue_script( 'scripts.js', get_template_directory_uri() . '/js/scripts.js'
    <div class="header-content container">
       <div class="logo">
          <a href="/">Adam Lamb</a>
-         <p>User Experience Research & Strategy</p>
+         <p><?php bloginfo( ‘description’ ); ?></p>
       </div>
       <nav>
          <?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
