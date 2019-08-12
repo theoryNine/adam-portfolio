@@ -19,8 +19,8 @@ $site_description = get_bloginfo( 'description', 'display' ); ?>
          <a href="/">Adam Lamb</a>
          <p><?php echo $site_description; ?></p>
       </div>
-      <nav>
+      <!--<nav>
          <?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
-      </nav>
+      </nav> -->
    </div>
 </header>
